@@ -34,8 +34,8 @@ public class Main {
                         System.out.println("Business person successfully added!");
                     }
                     System.out.println("Would you like to add another Business Contact? (Use Y/y for yes and N/n for no)");
-                    String businessAnswer = input.nextLine();
-                    if (businessAnswer.equalsIgnoreCase("N")) {
+                    String option = input.nextLine();
+                    if (option.equalsIgnoreCase("N")) {
                         quit = 1;
                     }
                 }
@@ -49,8 +49,8 @@ public class Main {
                 businessBook.add(new BusinessContact(businessName, businessEmail, businessPhone));
                 System.out.println("Business person successfully added!");
                 System.out.println("Would you like to add another Business Contact? (Use Y/y for yes and N/n for no)");
-                String businessAnswer = input.nextLine();
-                if (businessAnswer.equalsIgnoreCase("N")) {
+                String option = input.nextLine();
+                if (option.equalsIgnoreCase("N")) {
                     quit = 1;
                 }
             }
